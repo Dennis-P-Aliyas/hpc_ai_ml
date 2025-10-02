@@ -3,8 +3,8 @@ site_description: A collection of designs and concepts for building platforms fo
 site_author: Dennis P Aliyas
 docs_dir: .
 site_dir: ../site
-repo_url: https://dennis-p-aliyas.github.io/hpc_ai_ml/
-edit_uri: edit/main/
+repo_url: https://github.com/Dennis-P-Aliyas/hpc_ai_ml
+
 
 
 theme:
