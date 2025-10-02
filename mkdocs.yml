@@ -2,7 +2,9 @@ site_name: HPC , AI & ML Platform Architecture Designs & Concepts
 site_description: A collection of designs and concepts for building platforms for HPC, AI, and ML workloads.
 site_author: Dennis P Aliyas
 docs_dir: .
+site_dir: ../site
 repo_url: https://dennis-p-aliyas.github.io/hpc_ai_ml/
+edit_uri: edit/main/
 
 
 theme:
