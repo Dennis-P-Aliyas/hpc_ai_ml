@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-glightbox
+mkdocs-same-dir
+mkdocs-markdown-exec
+mkdocs-git-revision-date-localized-plugin
