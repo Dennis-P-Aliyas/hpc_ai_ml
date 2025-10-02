@@ -1,1 +1,84 @@
-site_name: My Docs
+site_name: HPC , AI & ML Platform Architecture Designs & Concepts
+site_description: A collection of designs and concepts for building platforms for HPC, AI, and ML workloads.
+site_author: Dennis P Aliyas
+docs_dir: .
+site_dir: ../site
+repo_url: https://dennis-p-aliyas.github.io/hpc_ai_ml/
+edit_uri: edit/main/
+
+
+theme:
+  language: en
+  name: material
+  favicon: figures/favicon.png
+  logo: figures/mlops_cycle.png
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - glightbox
+  - same-dir
+  - markdown-exec
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+
+extra:
+  social:
+    - icon: material/email
+      link: mailto:Dennis_Aliyas@outlook.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/Dennis-P-Aliyas
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dennis-p-aliyas-40676876/
+
+nav:
+  - Home: README.md
