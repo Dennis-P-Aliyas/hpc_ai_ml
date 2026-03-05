@@ -80,3 +80,6 @@ extra:
 
 nav:
   - Home: README.md
+  - SuperComputing:
+      - Overview: docs/SuperComputingupercomputing/overview.md
+      - IAM: docs/SuperComputing/IAM.md
