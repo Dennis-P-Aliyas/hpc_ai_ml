@@ -83,3 +83,8 @@ nav:
   - SuperComputing:
       - Overview: docs/SuperComputingupercomputing/overview.md
       - IAM: docs/SuperComputing/IAM.md
+  - Cloud Computing:
+      - AWS:
+      - Azure:
+      - GCP:
+  - Kubernetes:
