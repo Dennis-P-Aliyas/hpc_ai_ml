@@ -1,7 +1,7 @@
 site_name: HPC , AI & ML Platforms
 site_description: A collection of designs and concepts for building platforms for HPC, AI, and ML workloads.
 site_author: Dennis P Aliyas
-docs_dir: .
+docs_dir: docs
 site_dir: ../site
 repo_url: https://github.com/Dennis-P-Aliyas/hpc_ai_ml
 edit_uri: edit/main/
@@ -78,11 +78,11 @@ extra:
       link: https://www.linkedin.com/in/dennis-p-aliyas-40676876/
 
 nav:
-  - Home: README.md
+  - Home: ../README.md
   - SuperComputing:
-      - IAM: docs/SuperComputing/IAM.md
+      - IAM: SuperComputing/IAM.md
   - Cloud Computing:
       - Azure: 
-        - Azure CLI: docs/CloudComputing/Azure/Azure_CLI.md
+        - Azure CLI: CloudComputing/Azure/Azure_CLI.md
   - Kubernetes:
-      - K8S for HPC AI ML: docs/Kubernetes/K8S_for_HPC_AI_ML.md
+      - K8S for HPC AI ML: Kubernetes/K8S_for_HPC_AI_ML.md
