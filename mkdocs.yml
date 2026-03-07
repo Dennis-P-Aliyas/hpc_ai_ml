@@ -33,8 +33,6 @@ theme:
     - navigation.instant
     - navigation.indexes
     - navigation.footer
-    - navigation.expand
-    - navigation.sections
     - content.code.copy
     - content.code.annotate
     - content.action.edit
@@ -83,12 +81,9 @@ extra:
 nav:
   - Home: README.md
   - SuperComputing:
-      - Overview: docs/SuperComputingupercomputing/overview.md
       - IAM: docs/SuperComputing/IAM.md
   - Cloud Computing:
-      - AWS: docs/CloudComputing/AWS/index.md
       - Azure: 
         - Azure CLI: docs/CloudComputing/Azure/Azure_CLI.md
-      - GCP: docs/CloudComputing/GCP/index.md
   - Kubernetes:
-      - Overview: docs/Kubernetes/overview.md
+      - K8S for HPC AI ML: docs/Kubernetes/K8S_for_HPC_AI_ML.md
