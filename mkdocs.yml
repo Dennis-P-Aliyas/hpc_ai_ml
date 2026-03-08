@@ -13,7 +13,7 @@ theme:
   favicon: figures/favicon.png
   logo: figures/mlops_cycle.png
   font:
-    text: Roboto
+    text: PT Serif
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
