@@ -12,6 +12,9 @@ theme:
   name: material
   favicon: figures/favicon.png
   logo: figures/mlops_cycle.png
+  font:
+    text: Roboto
+    code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
