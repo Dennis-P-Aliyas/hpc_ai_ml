@@ -92,4 +92,6 @@ nav:
         - Azure CLI: docs/CloudComputing/Azure/Azure_CLI.md
       - GCP: docs/CloudComputing/GCP/index.md
   - Kubernetes:
-      - Overview: docs/Kubernetes/overview.md
+      - CKA:
+        - K8S Fundamentals: docs/Kubernetes/CKA/K8S_Fundamentals.md
+        - K8S Core Concepts: docs/Kubernetes/CKA/K8S_CoreConcepts.md
