@@ -15,17 +15,36 @@
 
 ![K8S_Components](./images/K8S_Components.png)
 
-- ***API Server***:  The API server acts as the front-end for kubernetes. The users, management devices, Command line interfaces all talk to the API server to interact with the kubernetes cluster.
 
-- ***etcd***: ETCD is a distributed reliable key-value store used by kubernetes to store all data used to manage the cluster. Think of it this way, when you have multiple nodes and multiple masters in your cluster, etcd stores all that information on all the nodes in the cluster in a distributed manner. ETCD is
-responsible for implementing locks within the cluster to ensure there are no conflicts
-between the Masters.
+- ***API Server***:  The API server acts as the front-end for kubernetes. The users, management devices, Command line interfaces all talk to the API server to interact with the kubernetes cluster. Kubeadm deploys `api-server`as a pod in `kube-system`namespace
 
-- ***Scheduler***: The scheduler is responsible for distributing work or containers across multiple
-nodes. It looks for newly created containers and assigns them to Nodes. 
+        $ kubectl get pods -A | egrep -i 'namespace|apiserver'
+        NAMESPACE      NAME                               READY   STATUS    RESTARTS   AGE
+        kube-system    kube-apiserver-k8s-cp-1            1/1     Running   0          2d6h
 
-- ***Controllers***: The controllers are the brain behind orchestration. They are responsible for noticing
-and responding when nodes, containers or endpoints goes down. The controllers makes decisions to bring up new containers in such cases.
+
+- ***etcd***: ETCD is a distributed reliable key-value store used by kubernetes to store all data used to manage the cluster. Think of it this way, when you have multiple nodes and multiple masters in your cluster, etcd stores all that information on all the nodes in the cluster in a distributed manner. ETCD is responsible for implementing locks within the cluster to ensure there are no conflicts between the Masters.
+
+- ***Scheduler***: The scheduler is responsible for distributing work or containers across multiple nodes. It looks for newly created containers and assigns them to Nodes.
+
+        $ kubectl get pods -A | egrep -i 'namespace|scheduler'
+        NAMESPACE      NAME                               READY   STATUS    RESTARTS   AGE
+        kube-system    kube-scheduler-k8s-cp-1            1/1     Running   0          2d21h
+
+- ***Controllers***: The controllers are the brain behind orchestration. They are responsible for noticing and responding when nodes, containers or endpoints goes down. The controllers makes decisions to bring up new containers in such cases.There are different controllers , some of the default controllers are listed below
+
+    - Node-Controller
+    - Replication-Controller
+    - Deployment-Controller
+    - Namespace-Controller
+    - Endpoint-Controller
+    - Job-COntroller
+
+- ***Kube Controller Manager***: All Kubernetes Controllers are packaged into a single process known as the Kubernetes Controller Manager.
+
+        $ kubectl get pods -A | egrep -i 'namespace|controller'
+        NAMESPACE      NAME                               READY   STATUS    RESTARTS   AGE
+        kube-system    kube-controller-manager-k8s-cp-1   1/1     Running   0          2d6h
 
 - ***Container Runtime***: The container runtime is the underlying software that is used to run containers.**containerd** is one of the most common runtimes used in Kubernetes clusters.
 
